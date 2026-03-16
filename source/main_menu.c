@@ -28,12 +28,12 @@ int main() {
         if (pid == 0) {
             // If user selects 1, execute the fork_tasks program
             if (choice == 1) {
-                execl("./fork_tasks", "fork_tasks", NULL);
+                execl("./executables/fork_tasks", "fork_tasks", NULL);
             }
 
             // If user selects 2, execute the producer_consumer program
             else if (choice == 2) {
-                execl("./producer_consumer", "producer_consumer", NULL);
+                execl("./executables/producer_consumer", "producer_consumer", NULL);
             }
 
             exit(0);

@@ -1,17 +1,17 @@
-## Build
+## Compilation Commands
 
 ```bash
-gcc main_menu.c -o main_menu
-gcc factorial.c -o factorial
-gcc fork_tasks.c -o fork_tasks
-gcc sorting.c -o sorting
-gcc producer_consumer.c -o producer_consumer
-gcc producer.c -o producer
-gcc consumer.c -o consumer
+gcc source/main_menu.c -o executables/main_menu
+gcc source/factorial.c -o executables/factorial
+gcc source/fork_tasks.c -o executables/fork_tasks
+gcc source/sorting.c -o executables/sorting
+gcc source/producer.c -o executables/producer
+gcc source/consumer.c -o executables/consumer
+gcc source/producer_consumer.c -o executables/producer_consumer
 ```
 
-## Run
+## Execution Command
 
 ```bash
-./main_menu
+./executables/main_menu
 ```

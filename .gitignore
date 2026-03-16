@@ -1,15 +1,1 @@
-# macOS metadata
 .DS_Store
-
-# Build outputs
-*.o
-*.out
-*.exe
-*.dSYM/
-
-# Generated dependency files
-*.d
-
-# Generated/computed C source files
-computed.c
-*computed*.c

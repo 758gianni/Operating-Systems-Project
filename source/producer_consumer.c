@@ -10,7 +10,7 @@ int main() {
     pid_t consumer_pid = fork();
 
     if (consumer_pid == 0) {
-        execl("./consumer", "consumer", NULL);
+        execl("./executables/consumer", "consumer", NULL);
         perror("execl consumer failed");
         exit(1);
     }
@@ -19,7 +19,7 @@ int main() {
     pid_t producer_pid = fork();
 
     if (producer_pid == 0) {
-        execl("./producer", "producer", NULL);
+        execl("./executables/producer", "producer", NULL);
         perror("execl producer failed");
         exit(1);
     }
