@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 int main() {
+    int num;
+    long long factorial = 1;
 
-    int n;
-    long long fact = 1;
-
+    // Get user input
     printf("Enter integer: ");
-    scanf("%d",&n);
+    scanf("%d", &num);
 
-    for(int i=1;i<=n;i++)
-        fact *= i;
+    // Calculate factorial using a loop
+    for (int i = 1; i <= num; i++) {
+        factorial *= i;
+    }
 
-    printf("Factorial = %lld\n",fact);
+    // Display the result
+    printf("Factorial = %lld\n", factorial);
 
     return 0;
 }
