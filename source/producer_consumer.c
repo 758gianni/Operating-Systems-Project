@@ -6,6 +6,8 @@
 int main() {
     printf("\nStarting producer and consumer processes...\n\n");
 
+    int status;
+
     // Fork child process for producer
     pid_t producer_pid = fork();
 
@@ -14,6 +16,8 @@ int main() {
         perror("execl producer failed");
         exit(1);
     }
+
+    waitpid(producer_pid, &status, 0);
 
     // Fork child process for consumer
     pid_t consumer_pid = fork();
@@ -24,10 +28,6 @@ int main() {
         exit(1);
     }
 
-    // Wait for both children to complete
-    int status;
-
-    waitpid(producer_pid, &status, 0);
     waitpid(consumer_pid, &status, 0);
 
     return 0;

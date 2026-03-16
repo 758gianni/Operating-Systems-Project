@@ -18,7 +18,7 @@ int main() {
 	
 	    // If user selects "Quit", exit program right away
         if (choice == 0) {
-            printf("Exiting program...\n");
+            printf("\nExiting program...\n\n");
             break;
         }
 
