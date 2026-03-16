@@ -8,11 +8,11 @@ int main() {
 
     while (1) {
         // Display the main menu
-        printf("\n===== Main Menu =====\n");
+        printf("\n===== Main Menu =====\n\n");
         printf("Select Project:\n");
         printf("1. Fork-Based Task Executor System\n");
         printf("2. Producer-Consumer Simulation System\n");
-        printf("0. Quit\n");
+        printf("0. Quit\n\n");
         printf("Enter choice: ");
         scanf("%d", &choice);
 	
